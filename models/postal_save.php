@@ -20,7 +20,7 @@ function save($data)
     if($conn->query($query) === TRUE){
         header('location: ../overview/postal.php?success');
     }else{
-        header('location: ../overview/postal.php?invalid');
+        header('location: ../overview/postal.php?invalid'); 
     }
 
     $conn->close();
